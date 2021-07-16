@@ -10,7 +10,7 @@ var block_image_object="";
 function new_image(get_image)
 {
     fabric.Image.fromURL(get_image, function(Img){
-        player_object = Img;
+        block_image_object = Img;
 
         block_image_object.scaleToWidth(block_image_width);
         block_image_object.scaleToHeight(block_image_height);
@@ -26,12 +26,12 @@ window.addEventListener("keydown" , my_keydown);
 
 function my_keydown(e)
 {
-    keypressed = e.keycode;
+    keypressed = e.keyCode;
     console.log(keypressed);
 
     if (keypressed == "82") 
-    {
-        new_image('rr.png');
+    {block_x=50;
+        new_image('rr.jpg');
     console.log("r");   
  }
  if (keypressed == "71") 
